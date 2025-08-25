@@ -27,12 +27,15 @@ abrirPopupProyecto('hanfitCard', 'popupHanfit');
 // SCROLL Header
 const header = document.querySelector('.main-header');
 const main = document.querySelector('main');
+const scrollArrow = document.querySelector('.scroll-arrow');
 
 function ajustarMain() {
     if (header.classList.contains('scrolled')) {
         main.style.paddingTop = '100px';
+        if (scrollArrow) scrollArrow.style.display = 'none'; 
     } else {
         main.style.paddingTop = window.innerHeight + 'px';
+        if (scrollArrow) scrollArrow.style.display = 'block'; 
     }
 }
 
@@ -47,3 +50,4 @@ window.addEventListener('scroll', () => {
     }
     ajustarMain();
 });
+

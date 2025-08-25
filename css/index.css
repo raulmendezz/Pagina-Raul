@@ -264,6 +264,31 @@ footer {
     cursor: pointer;
 }
 
+/* --- SCROLL ARROW --- */
+.scroll-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    z-index: 3;
+    font-size: 2.5rem;
+    color: #fff;
+    opacity: 0.85;
+    animation: arrowMove 1.5s infinite;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.scroll-arrow:hover {
+    opacity: 1;
+}
+
+@keyframes arrowMove {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(18px); }
+    100% { transform: translateX(-50%) translateY(0); }
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 700px) {
     main {
