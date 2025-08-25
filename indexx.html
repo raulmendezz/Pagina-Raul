@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Raul</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header full-screen">
+        <div class="overlay-bg"></div>
+        <div class="header-content">
+            <h1 class="logo">CONÓCEME</h1>
+            <p class="subtitle">
+                Me llamo <strong>Raul</strong>, esta es mi página donde vas a conocer un poco de mí, mis proyectos y mis metas.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <div class="cont1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 about-me">
+                        <h2 class="section-title">Sobre mí</h2>
+                        <p>
+                        Soy un estudiante de <strong>DAM</strong> al que le encanta el código y en mis tiempos libres me busco mi futuro realizando diversos proyectos.
+                        </p>
+                        <p>
+                        A día de hoy estoy en busca de <strong>empleo</strong> para poder aprender más y seguir formándome para poder llegar a ser un buen developer.
+                        </p>
+                        <p>
+                        He desarrollado diversas <strong>aplicaciones web</strong> para un hospital de prácticas, pero también he trabajado con algunos clientes creando <strong>landing pages</strong>.
+                        </p>
+                        <p>
+                        Aquí vas a poder ver mis proyectos tanto personales como los que me han solicitado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cont2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Proyectos Destacados</h2>
+                        <div class="features">
+                            <div class="feature-card">
+                                <div class="feature-title">Pagina Web Hanfit</div>
+                                <div class="feature-desc">Una Web para consultar las tarifas y las clases del gimnasio.</div>
+                            </div>
+                        </div>
+                        <div class="conectame">
+                            <button class="cta-btn" id="abrirPopup">Contactame</button>
+                        </div>
+
+                        <!--popup-->
+                        <div class="overlay" id="overlayPopup">
+                            <div class="popup" role="dialog" aria-modal="true" aria-labelledby="ttl">
+                                <h3 id="ttl">Formas de contactarme</h3>
+                                <div class="social-links">
+                                    <p>
+                                        <a href="https://www.instagram.com/raulmendezz._" target="_blank" aria-label="Instagram">
+                                            <i class="fa-brands fa-instagram"></i>
+                                            raulmendezz._
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="mailto:raulmendez@gmail.com" aria-label="Gmail">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            raulmendez@gmail.com
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <a href="https://www.linkedin.com/in/raúl-méndez-sáez-669460296" target="_blank" aria-label="LinkedIn">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                            raulmendez
+                                        </a>
+                                    </p>
+                                </div>
+
+                                <button id="cerrarPopup" class="cta-btn">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Raul. Todos los derechos reservados.
+    </footer>
+    <script src="script/index.js"></script>
+</body>
+</html>
