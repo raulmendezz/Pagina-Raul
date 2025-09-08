@@ -302,3 +302,110 @@ footer {
         width: 100%;
     }
 }
+
+/*--- Carrosel de fotos ---*/
+
+.carrusel {
+      width: 400px;
+      height: 250px;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+.carrusel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+.carrusel img.activa {
+      opacity: 1;
+    }
+
+#carrusel {
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 300px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carrusel img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#carrusel img.activa {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Flecha animada del popup --- */
+.click-arrow {
+  text-align: center;
+  margin: 10px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.click-arrow i {
+  font-size: 2rem;
+  color: #007bff;
+  animation: bounce 1s infinite;
+}
+
+.arrow-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(10px);}
+}
+
+.click-arrow-popup {
+  text-align: center;
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.click-arrow-popup i {
+  font-size: 2.2rem;
+  color: #1976d2;
+  transform: rotate(-30deg);
+  animation: bouncePopup 1s infinite;
+}
+
+@keyframes bouncePopup {
+  0%, 100% { transform: rotate(-30deg) translateY(0);}
+  50% { transform: rotate(-30deg) translateY(12px);}
+}
+
+.click-arrow-popup .arrow-text {
+  font-size: 1rem;
+  color: #333;
+}

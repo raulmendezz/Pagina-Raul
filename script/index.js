@@ -50,4 +50,34 @@ window.addEventListener('scroll', () => {
     }
     ajustarMain();
 });
+//Carrosel
+
+const imagenes = [
+    "img/car1/1.png",
+    "img/car1/2.png",
+    "img/car1/3.png",
+    "img/car1/4.png",
+    "img/car1/5.png",
+    "img/car1/6.png"
+];
+
+const carrusel = document.getElementById("carrusel");
+let indice = 0;
+
+imagenes.forEach((src, i) => {
+  const img = document.createElement("img");
+  img.src = src;
+  if (i === 0) img.classList.add("activa"); 
+  carrusel.appendChild(img);
+});
+
+const todasLasImagenes = carrusel.querySelectorAll("img");
+
+function cambiarImagen() {
+  todasLasImagenes[indice].classList.remove("activa");
+  indice = (indice + 1) % imagenes.length;
+  todasLasImagenes[indice].classList.add("activa");
+}
+
+setInterval(cambiarImagen, 3000);
 
